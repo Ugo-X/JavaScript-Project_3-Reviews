@@ -304,20 +304,9 @@ main {
   position: relative;
 }
 
-.random-btn {
-  margin-top: 0.4rem;
-  border: 2px solid var(--green-dark);
-  background: transparent;
-  color: var(--primary-500);
-  border-radius: 0.5rem;
-}
 
-.prev-btn,
-.next-btn {
-  background: none;
-  border: none;
-  color: var(--grey-600);
-}
+
+
 .img-container::before {
   content: "";
   width: 100%;
@@ -344,4 +333,39 @@ main {
   font-weight: 900;
   display: grid;
   place-items: center;
+}
+
+#job {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--primary-500);
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  color: var(--primary-300);
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover{
+color: var(--primary-500);
+}
+
+
+.random-btn {
+  margin-top: 0.75rem;
+  border: 2px solid var(--primary-500);
+  background: var(--primary-100);
+  color: var(--primary-500);
+  border-radius: 0.5rem;
+  
+}
+.random-btn:hover{
+  background: var(--primary-400);
+  color: white;
 }
