@@ -57,6 +57,7 @@ showPerson(currentItem)
 
 function showPerson (){
  // assigned a variable to the reviews[currentItem] array
+ // recall that the currentItem is equals to a number so it is about the same thing as saying reviews[0], but we assign the number to a variable so that we can use it to count up or count down 
  const item = reviews[currentItem];
  img.src = item.img;
  author.textContent = item.name;
